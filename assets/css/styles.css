@@ -449,6 +449,7 @@ img {
     border-radius: 15px;
 }
 
+
 .skills__header{
     display:flex;
     align-items: center;
@@ -591,6 +592,20 @@ img {
     grid-gap: 1rem;
    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;*/
     border-radius: 15px;
+    width : 200px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.skills__hard{
+    position:absolute; 
+    margin-left: auto;
+}
+.skills__content{
+    width: 200px;
 }
 
 
@@ -633,6 +648,7 @@ img {
 .skills__open .skills__arrow{
     transform: rotate(-180deg);
 }
+
 
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs{
@@ -966,13 +982,6 @@ img {
         width: 200px;
     }
   
-    .skills__container {
-        display: flex;
-        flex-direction: column; /* For vertical placement of items */
-      }
-      .skills__content {
-        order: 2;
-      }
 }
 
 /* For medium devices */
