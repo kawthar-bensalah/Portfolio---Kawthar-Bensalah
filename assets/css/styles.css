@@ -592,20 +592,6 @@ img {
     grid-gap: 1rem;
    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;*/
     border-radius: 15px;
-    width : 200px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: center;
-}
-
-.skills__hard{
-    position:absolute; 
-    margin-left: auto;
-}
-.skills__content{
-    width: 200px;
 }
 
 
@@ -981,8 +967,79 @@ img {
     .project__img{
         width: 200px;
     }
-  
+
+    .skills__list{
+        row-gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-gap: 1rem;
+       /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;*/
+        border-radius: 15px;
+        grid-template-columns: repeat(1, 1fr); /*iphone ipad */
+        padding-left: 15%; /*iphone + ipad */
+    }
 }
+
+/* For small devices (iphones) */
+@media screen and (max-width: 428px){
+    .container{
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+
+    .nav__menu{
+        padding: 2rem .25rem 4rem;
+    }
+    .nav__list{
+        column-gap: 0;
+    }
+
+    .home__content{
+        grid-template-columns: .25fr 3fr;
+    }
+    .home__blob{
+        width: 180px;
+    }
+
+    .skills__title{
+        font-size: var(--normal-font-size);
+    }
+
+    .qualification__data{
+        gap: .5rem;
+    }
+
+    .project__img{
+        width: 200px;
+    }
+    
+    .skills__list{
+        row-gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-gap: 1rem;
+       /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;*/
+        border-radius: 15px;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 15%;
+    }
+
+    .skills__content{
+        width: 200px;
+    }
+
+    #hard__skills{
+        margin-bottom: 10%;
+    }
+}
+
+
 
 /* For medium devices */
 @media screen and (min-width: 568px){
@@ -1143,6 +1200,18 @@ img {
     }
     .footer__copy{
         margin-top: 4.5rem;
+    }
+
+    .skills__list{
+        row-gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-gap: 1rem;
+       /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;*/
+        border-radius: 15px;
     }
 }
 

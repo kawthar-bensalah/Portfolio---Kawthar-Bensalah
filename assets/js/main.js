@@ -168,6 +168,8 @@ themeButton.addEventListener('click', () => {
 
 /*==================SCROLL REVEAL ANIMATION =============== */
 var i=0;
+if(window.innerWidth>=810)
+{
 window.addEventListener('scroll', () => 
 {
     if(scrollY >= 1000 && scrollY < 1500)
@@ -194,6 +196,7 @@ window.addEventListener('scroll', () =>
     }
 }
 )
+}
 
 function sendMail(){
     var emailSubject = document.getElementsByName("emailSubject")[0].value;
